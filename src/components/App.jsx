@@ -1,16 +1,21 @@
-export const App = () => {
+import './App.css';
+
+export default function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className="app">
+      <h2>Pomodoro!</h2>
+
+      <div className="timer">
+        <span>00</span>
+        <span>:</span>
+        <span>00</span>
+      </div>
+
+      <div className="buttons">
+        <button>Start</button>
+        <button>Stop</button>
+        <button>Reset</button>
+      </div>
     </div>
   );
-};
+}
